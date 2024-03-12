@@ -88,7 +88,7 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
 app.get("/", (req, res) => {
-  res.send("yelp home");
+  res.render("home");
 });
 
 // redirect to error handler for everything that doesnt exisit
